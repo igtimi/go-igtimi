@@ -45,7 +45,7 @@ The following is a short summary of the most important parts of the protocol. Fo
 
 The devices send messages according to the riot protocol, as defined in [/proto/com/igtimi](/proto/com/igtimi/). The protocol is based on the [protobuf](https://developers.google.com/protocol-buffers) serialization format.
 
-Devices connect to the server via a TCP connection (usually on port 6000). The message are sent in a length-prefixed format, where each message is preceded by the length of the message in bytes encoded as a [protobuf Varint](https://protobuf.dev/programming-guides/encoding/#varints).
+Devices connect to the server via a TCP connection (usually on port 6000). The messages are sent in a length-prefixed format, where each message is preceded by the length of the message in bytes encoded as a [protobuf Varint](https://protobuf.dev/programming-guides/encoding/#varints).
 All messages sent from/to the device must adhere to [*com.igtimi.Msg*](./proto/com/igtimi/IgtimiStream.proto).
 
 ### Acknowledgments
